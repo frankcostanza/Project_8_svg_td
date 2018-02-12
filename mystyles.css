@@ -1,0 +1,155 @@
+/* -------GENERAL STYLES-------*/
+
+ul {
+	list-style: none;
+}
+
+body {
+	background-image: url("svgs/background.svg");
+}
+
+
+/* -------NAVIGATION-------*/
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	margin-left: 10px;
+
+	
+}
+
+.home,
+.visit,
+.contact {
+	display: flex;
+	align-items: center;
+	padding-right: 15px
+
+}
+
+a svg {
+	padding-right: 6px;
+
+}
+
+
+a:hover {
+	color: #84e296;
+	transform: scale(1.2);
+}
+
+a:hover .st0 {
+	fill: #84e296;
+}
+
+a {
+	transition: transform .6s ease-out;
+}
+
+
+
+
+
+
+
+
+
+/*---------MAIN PART------------*/
+
+h1 {
+	text-align: center;
+	margin: 0 auto;
+	color: #BA8058;
+	font-size: 1.2rem;
+	margin-top: 30px;
+}
+
+
+.logo {
+	width: 140px;
+	height: 120px;
+	margin: 10px auto;
+	transition: transform 2s ease;
+	transform-origin: 70.4px 69.9px;
+}
+
+
+
+
+.logo:hover {
+	transform: rotateX(360deg);
+	transform-origin: 70.4px 69.9px;
+}
+
+
+
+.st1 {
+	opacity: 0;
+}
+
+/*------DOGS CORGI*-------*/
+
+.sable {
+	color: #BA8058;
+
+}
+
+.fawn {
+	color:#EAAA7F
+
+}
+
+.red {
+	color:#8B4513;
+
+}
+
+.stone {
+	color:#8B8D7A;
+}
+
+div > span {
+	color:#BA8058;
+}
+
+div > span:nth-child(1) {
+	position: relative;
+	left: -193px;
+}
+
+div > span:nth-child(2) {
+	position: relative;
+	left: -82px;
+}
+
+div > span:nth-child(3) {
+	position: relative;
+	left: 39px;
+}
+
+div > span:nth-child(4) {
+	position: relative;
+	left: 161px;
+}
+
+
+/* Media Querries */
+
+@media (min-width: 425px) {
+
+	h1 {
+		display:none;
+	}
+
+	.st1 {
+		opacity:1;
+	}
+
+	.logo {
+		margin-top:40px;
+		margin-bottom: 60px;
+	}
+
+
+}
